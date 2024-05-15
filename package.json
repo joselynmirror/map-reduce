@@ -1,0 +1,13 @@
+{
+  "name": "map-reduce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "git@github.com:joselynmirror/map-reduce.git",
+  "author": "Joselyn Espejo <joselyneb27@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/grpc-js": "1.10.8",
+    "@grpc/proto-loader": "0.7.13"
+  }
+}
