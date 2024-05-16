@@ -1,0 +1,28 @@
+syntax = 'proto3';
+
+package mapReducePackage;
+
+service MapReduce {
+    rpc map (MapRequest) returns (MapResponse);
+    rpc reduce (ReduceRequest) returns (ReduceResponse);
+}
+
+message MapRequest {
+    string description = 1;
+}
+
+message Result {
+    string key = 1;
+    int32 value = 2;
+}
+
+message MapResponse {
+    repeated Result results = 1;
+}
+
+message ReduceRequest {
+    repeated Result results = 1;
+}
+
+message ReduceResponse {
+}
